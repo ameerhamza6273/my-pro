@@ -27,15 +27,15 @@
 
 <script>
 import HeroSection from "../components/HeroSection.vue";
-import FrameBrands from "../components/FrameBrands.vue";
-import ApplyFrame from "@/components/ApplyFrame.vue";
-import GreenCard from "@/components/GreenCard.vue";
-import IndividualFrame from "@/components/IndividualFrame.vue";
-import Testimonial from "@/components/Testimonial.vue";
+import FrameBrands from "../components/home_components/FrameBrands.vue";
+import ApplyFrame from "@/components/home_components/ApplyFrame.vue";
+import GreenCard from "@/components/home_components/GreenCard.vue";
+import IndividualFrame from "@/components/home_components/IndividualFrame.vue";
+import Testimonial from "@/components/home_components/Testimonial.vue";
 import ClientFrame from "@/components/ClientFrame.vue";
-import Confidence from "@/components/Confidence.vue";
-import AskedQuestion from "@/components/AskedQuestion.vue";
-import ImagesNavigater from "@/components/ImagesNavigater.vue";
+import Confidence from "@/components/home_components/Confidence.vue";
+import AskedQuestion from "@/components/home_components/AskedQuestion.vue";
+import ImagesNavigater from "@/components/home_components/ImagesNavigater.vue";
 
 export default {
   name: "Home",

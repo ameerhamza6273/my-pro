@@ -51,7 +51,7 @@
         <v-row class="footer-bottom pb-3 ">
             <p class="footer-bottom-text">© 2023 All Rights Reserved</p>
             <v-spacer></v-spacer>
-            <v-row class="footer-bottom-img-div" align="center" justify="space-around">
+            <v-row class="footer-bottom-img-div" align="center">
                 <img alt="user" src="Vector (1).png" class="footer-bottom-images" >
                 <img alt="user" src="Vector (2).png" class="footer-bottom-images" >
                 <img alt="user" src="instagram.png" class="footer-bottom-images" >
@@ -207,13 +207,23 @@ export default {
     color: #FFFFFF;
     opacity: 0.85;
 }
+.footer-bottom-img-div {
+    justify-content: space-around !important;
+}
 
 .small-screen-text{
     display: none;
 }
 
 /* media queries start from here */
-
+@media screen and (min-width:1900px) {
+    .footer-frame-company {
+        margin-left: 150px;
+    }
+    .footer-frame-social {
+        padding-left: 180px;
+    }
+}
 @media screen and (max-width:1160px) {
     .footer-frame-company {
         margin-left: 30px;
@@ -242,7 +252,13 @@ export default {
     }
     .footer-bottom-img-div{
         width: 100%;
-        margin-top: 10px;
+        justify-content: center !important;
+        margin-top: 5px;
+        /* margin-bottom: 15px; */
+    }
+
+    .footer-bottom-images{
+        margin-left: 40px
     }
     .footer-bottom-text{
         display: none;
@@ -256,7 +272,7 @@ export default {
     }
     .small-screen-text-2{
         float: right;
-        margin-top: -25px;
+        margin-top: 0px;
     }
     .small-screen-text-3{
         text-align: center;
@@ -266,7 +282,11 @@ export default {
         margin-left: -10px;
     }
 }
-
+@media screen and (max-width:800px) {
+    .footer-bottom-img-div{
+        margin-bottom: 15px;
+    }
+}
 @media screen and (max-width:600px) {
     .v-footer {
         padding: 50px 50px 15px 50px !important;
@@ -299,7 +319,14 @@ export default {
         padding-left: 0px;
         margin-left: -10px;
     }
+    .footer-bottom-img-div{
+        margin-left: -60px
+    }
    
 }
-
+@media screen and (max-width:360px) {
+    .footer-bottom-images{
+        margin-left: 20px
+    }
+}
 </style>

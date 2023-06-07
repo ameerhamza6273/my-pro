@@ -3,7 +3,7 @@
     <v-app-bar app flat class="app-bar-style" height="90">
       <!-- app bar logo is here -->
       <div>
-        <v-img alt="Vuetify Logo" src="logo.png" width="135" />
+        <img alt="Vuetify Logo" src="logo_ambar (1).svg" width="145" />
       </div>
 
       <v-spacer></v-spacer>
@@ -34,7 +34,7 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <v-btn class="login-btn" depressed><span>Log in</span></v-btn>
+      <v-btn class="login-btn d-sm-none d-md-flex" depressed><span>Log in</span></v-btn>
     </v-navigation-drawer>
     <v-main>
       <router-view />
@@ -106,15 +106,36 @@ export default {
   background-color: rgba(4, 30, 66, 0.1);
   border-bottom: 2px solid #041E42 !important;
 }
+/* media queries is here */
 
+@media screen and (min-width:1900px) {
+  .app-bar-style {
+    padding: 0 100px !important;
+  }
+}
+@media screen and (max-width:1200px) {
+  .router-style .links-style {
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
 @media screen and (max-width:1100px) {
+  .app-bar-style {
+    padding: 0 20px !important;
+  }
+}
+
+@media screen and (max-width:1050px) {
   .app-bar-style {
     padding: 0 10px !important;
   }
-
   .router-style .links-style {
-    font-weight: 400;
-    font-size: 13px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width:900px) {
+  .app-bar-style {
+    padding: 0 40px !important;
   }
 }
 @media screen and (max-width:600px) {

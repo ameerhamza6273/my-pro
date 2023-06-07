@@ -14,7 +14,7 @@
                 <carousel :autoplay="false" :loop="true" :dots="false" :center="true" :slideBy=1 :navText="navText"
                     :navClass="navClass" :responsive="responsive">
                     <!-- all carousel cards is here -->
-                    <v-card max-width="360" flat class="apply-frame-inner-cards" v-for="(item, index) in cardsArray" :key="index">
+                    <v-card flat class="apply-frame-inner-cards" v-for="(item, index) in cardsArray" :key="index">
                         <img alt="user" :src="item.img" class="apply-frame-inner-cards-img">
                         <v-card-title class="apply-frame-inner-cards-heading">
                             {{ item.title }}
@@ -54,34 +54,22 @@ export default {
                 }
             },
             cardsArray: [
-                {
-                    img: "Clip path group.png", title: "Pay the Fee", text: `We lead the market when it comes to EB-3 Unskilled application processing charges. Our pricing
+                { img: "Clip path group.png", title: "Pay the Fee", text: `We lead the market when it comes to EB-3 Unskilled application processing charges. Our pricing
                 model gives our clients the opportunity to apply for the program without being a burden to their finances. An
                 amazing instalment plan is also available to cater to the needs of EB-3 Unskilled aspirants.` },
-                {
-                    img: "Medal Icon.png", title: "Your Journey Starts", text: `Now that you have selected a job and have paid the fees, your US green card journey has begun.
+                { img: "Medal Icon.png", title: "Your Journey Starts", text: `Now that you have selected a job and have paid the fees, your US green card journey has begun.
                 Our administrative staff and team of attorneys will take care of you from now until you get your
                 green card.` },
-                {
-                    img: "Clip path group.png", title: " Create Account", text: `We work with reputable employers and find them the right candidates to fill in their positions.
+                { img: "Clip path group.png", title: " Create Account", text: `We work with reputable employers and find them the right candidates to fill in their positions.
                 We have several sponsors available and you may visit the client portal to choose a job and location that best fits your needs.` },
-                {
-                    img: "Clip path group.png", title: "Pay the Fee", text: `We lead the market when it comes to EB-3 Unskilled application processing charges. Our pricing
-                model gives our clients the opportunity to apply for the program without being a burden to their finances. An
-                amazing instalment plan is also available to cater to the needs of EB-3 Unskilled aspirants.` },
-                {
-                    img: "Clip path group.png", title: " Create Account", text: `We work with reputable employers and find them the right candidates to fill in their positions.
-                We have several sponsors available and you may visit the client portal to choose a job and location that best fits your needs.` },
-
             ]
-           
+
         }
     }
 }
 </script>
 
 <style>
-
 /*  apply frame syle is here */
 .apply-frame {
     margin-top: 80px;
@@ -116,8 +104,10 @@ export default {
 
 .apply-frame-inner-cards {
     border-radius: 24px !important;
-    padding-top: 30px;
-    margin-top: 74px;
+    margin-top: 54px;
+    padding: 60px 5px 1px 5px;
+    max-width: 360px;
+    min-height: 425px;
 }
 
 .apply-frame-inner-cards-img {
@@ -149,38 +139,82 @@ export default {
 }
 
 /* carousel style is here */
-.owl-item.active.center>div .apply-frame-inner-cards-heading{
-   color: #FFFFFF !important;
+.apply-frame-inner .owl-item.active.center>div .apply-frame-inner-cards-heading {
+    color: #FFFFFF !important;
 }
-.owl-item.active.center>div .apply-frame-inner-cards-text{
-   color: #FFFFFF !important;
-   opacity: 0.85;
+
+.apply-frame-inner .owl-item.active.center>div .apply-frame-inner-cards-text {
+    color: #FFFFFF !important;
+    opacity: 0.85;
 }
-.owl-item.active.center>div .apply-frame-inner-cards-img{
-  filter: brightness(7.25)
+
+.apply-frame-inner .owl-item.active.center>div .apply-frame-inner-cards-img {
+    filter: brightness(7.25)
 }
-.owl-item.active.center>div {
+
+.apply-frame-inner .owl-item.active.center>div {
     background-color: #4172A0;
-    margin-top: 0px;
-    padding: 60px 5px 1px 5px;
 }
-.owl-theme .owl-nav [class*='owl-next']{
+
+.apply-frame-inner .owl-theme .owl-nav [class*='owl-next'] {
     margin-left: 20px;
     background-color: transparent;
 }
-.owl-theme .owl-nav [class*='owl-next']:hover{
+
+.apply-frame-inner .owl-theme .owl-nav [class*='owl-next']:hover {
     background-color: transparent;
 }
 
-.owl-theme .owl-nav [class*='owl-prev']{
+.apply-frame-inner .owl-theme .owl-nav [class*='owl-prev'] {
     margin-right: 20px;
     background-color: transparent !important;
+}
+
+@media screen and (min-width:1900px) {
+    .apply-frame-inner {
+        margin-left: 200px;
+
+    }
+}
+
+@media screen and (max-width:1260px) {
+
+    .apply-frame-inner-cards {
+        padding: 35px 0px 1px 0px;
+        min-height: 350px !important;
+    }
+
+    .apply-frame-inner-cards-heading {
+        font-weight: 200;
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .apply-frame-inner-cards-text {
+        font-weight: 100;
+        font-size: 13px;
+    }
+
+    .apply-frame-inner-cards-text p {
+        margin-bottom: 0 !important;
+    }
 }
 
 @media screen and (max-width:900px) {
     .apply-frame-inner-cards {
         margin: 0 auto;
+        padding: 60px 5px 1px 5px;
+        height: 405px;
     }
-}
 
-</style>
+    .apply-frame-inner-cards-heading {
+        font-weight: 400;
+        font-size: 28px;
+        margin-top: 15px;
+    }
+
+    .apply-frame-inner-cards-text {
+        font-weight: 300;
+        font-size: 14px;
+    }
+}</style>

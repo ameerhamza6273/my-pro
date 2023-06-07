@@ -92,7 +92,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     max-width: 51%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* hero section button style is here */
@@ -113,6 +113,30 @@ export default {
 }
 
 /* media queries start from here */
+@media screen and (min-width:1900px) {
+    .hero-section .hero-section-text {
+    font-size: 24px;
+    padding-top: 150px;
+}
+
+/* hero section heading is here */
+.hero-section .hero-section-heading {
+    font-weight: 650;
+    font-size: 170px;
+    line-height: 150px;
+}
+
+/* hero section small text is here */
+.hero-section .hero-section-small-text {
+    font-size: 15px;
+    margin-top: 60px;
+    max-width: 42%;
+}
+.hero-section .hero-section-btn {
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+}
 @media screen and (max-width:960px) {
     .hero-section .hero-section-heading {
         font-size: 123px;

@@ -119,7 +119,7 @@ export default {
     margin-left: auto;
 }
 
-.clint-action-first{
+.clint-action-first {
     margin-right: 40px;
 }
 
@@ -157,19 +157,32 @@ export default {
 }
 
 /* media queries start from is here */
+
+@media screen and (min-width:1900px) {
+    .clint-images-inner {
+        margin-left: 183px;
+        margin-right: 167px;
+    }
+    .div-bottom{
+        width: 88%;
+    }
+}
+
 @media screen and (max-width:1260px) {
     .celebrity-text {
         padding-right: 70px;
     }
+
     .clint-action::before {
         display: none;
     }
 }
 
 @media screen and (max-width:830px) {
-    .clint-action-first{
-    margin-right: 20px;
-}
+    .clint-action-first {
+        margin-right: 20px;
+    }
+
     .clint-action {
         margin-left: 10px;
     }
@@ -184,10 +197,11 @@ export default {
         height: 30px;
         margin: 10px;
     }
+
     .celebrity-text {
         padding-right: 44px;
     }
-    
+
 }
 
 @media screen and (max-width:488px) {
@@ -215,18 +229,22 @@ export default {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width:420px) {
-    .clint-action-first{
-    margin-right: 0px;
-    
-}
+    .clint-action-first {
+        margin-right: 0px;
+
+    }
+
     .clint-action {
         margin-right: 3px;
     }
-    .clint-action-div{
+
+    .clint-action-div {
         margin-left: -40px;
     }
 }
+
 @media screen and (max-width:380px) {
     .celebrity-text {
         padding-right: 35px;

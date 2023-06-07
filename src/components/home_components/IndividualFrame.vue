@@ -87,7 +87,12 @@ export default {
 }
 
 /* media queries start from here */
-
+@media screen and (min-width:1900px) {
+    .individual-frame{
+        margin-left: 165px;
+        margin-right: 145px;
+    }
+}
 @media screen and (max-width:900px) {
     .individual-frame-heading{
         text-align: center !important;

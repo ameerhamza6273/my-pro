@@ -90,7 +90,7 @@ export default {
 }
 
 .green-card {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .green-card-heading {
@@ -132,7 +132,7 @@ export default {
     line-height: 32px;
     color: #111827;
     padding-left: 37px;
-    margin-top: 10px;
+    padding-bottom: 0;
 }
 
 .green-card-inner .expansion-title .title-span {
@@ -151,7 +151,7 @@ export default {
     font-size: 13px;
     line-height: 25px;
     color: #1F2937;
-    margin-top: -13px;
+    /* margin-top: -13px; */
     padding: 0 50px 0px 35px;
     border-radius: 5px 5px 5px 5px;
 }
@@ -171,6 +171,16 @@ export default {
 }
 
 /* media queries is here */
+@media screen and (min-width:1900px) {
+    .green-card-inner{
+        padding-left: 200px;
+        
+    }
+    .green-card-img{
+        margin-left: 300px;
+        
+    }
+}
 @media screen and (max-width:1000px) {
     .green-card-img {
         margin-left: 50px;

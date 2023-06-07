@@ -31,7 +31,7 @@
                     </v-card>
                 </v-col>
                 <!-- Images Navigater second colum is here -->
-                <v-col cols="12" lg="5" md="5" sm="12" >
+                <v-col cols="12" lg="5" md="5" sm="12">
                     <v-row class="images-navigater-small-images">
                         <v-col cols="12" md="12" sm="6">
                             <img src="Image Placeholder (6).png" alt="user" class="images-navigater-small-img">
@@ -159,51 +159,77 @@ export default {
     line-height: 24px;
     color: #222222;
 }
-.images-navigater-small-images{
+
+.images-navigater-small-images {
     margin-left: 10px;
 }
-@media screen and (max-width:1265px) {
+
+/* media queries is here */
+@media screen and (min-width:1900px) {
+    .images-navigater{
+        margin-left: 175px !important;
+        margin-right: 130px;
+    }
+    .images-navigater-inner {
+        margin-left: 175px !important;
+        margin-right: 130px;
+    }
+
     .images-navigater-big-img {
-    width: 525px !important;
-    height: 550px;
-    
+        width: 100% !important;
+    }
+
+    .images-navigater-small-img {
+        width: 130%;
+
+    }
 }
 
-.images-navigater-small-img {
-    width: 350px !important;
-}
+@media screen and (max-width:1265px) {
+    .images-navigater-big-img {
+        width: 525px !important;
+        height: 550px;
+
+    }
+
+    .images-navigater-small-img {
+        width: 350px !important;
+    }
 }
 
 @media screen and (max-width:965px) {
     .images-navigater-inner-big {
-       margin-left: 40px;
+        margin-left: 40px;
     }
+
     .images-navigater-big-img {
-        width:95% !important;
+        width: 95% !important;
     }
 }
+
 @media screen and (max-width:800px) {
     .images-navigater-inner-big {
-       margin-left: 10px;
+        margin-left: 10px;
     }
+
     .images-navigater-small-images {
         margin-left: -15px;
     }
 }
+
 @media screen and (max-width:740px) {
     .images-navigater-small-img {
-    width: 95% !important;
-}
+        width: 95% !important;
+    }
 }
 
 @media screen and (max-width:600px) {
     .images-navigater-big-img {
-        height:250px;
+        height: 250px;
     }
 
     .images-navigater-small-img {
-        width:100% !important;
-        height:210px;
+        width: 100% !important;
+        height: 210px;
     }
-}
-</style>
+}</style>

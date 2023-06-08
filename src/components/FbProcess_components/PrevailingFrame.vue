@@ -30,7 +30,7 @@
                 </v-col>
                 <!-- prevailing frame image is here-->
                 <v-col cols="12" md="6" sm="12">
-                    <v-img src="Image Placeholder process.png" alt="user" class="prevailing-frame-img mt-9" ></v-img>
+                    <img src="Image Placeholder process.png" alt="user" class="prevailing-frame-img mt-9" >
                 </v-col>
             </v-row>
         </carousel>

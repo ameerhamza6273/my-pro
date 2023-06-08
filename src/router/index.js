@@ -16,6 +16,12 @@ const routes = [
     component: () =>
       import("../views/FbProcess.vue"),
   },
+  {
+    path: "/jobs",
+    name: "jobs",
+    component: () =>
+      import("../views/JobSection.vue"),
+  },
 ];
 
 const router = new VueRouter({

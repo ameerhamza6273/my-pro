@@ -35,7 +35,7 @@ export default {
 /* style is here */
 .process-hero-section {
     background-image: url("@/assets/Image\ Placeholder\ Process.png") !important;
-    min-height: 470px;
+    min-height: 430px;
     background-position: cover;
     background-size: cover;
 }
@@ -49,11 +49,11 @@ export default {
     text-align: center;
     color: #FFFFFF;
     text-shadow: 5px 20px 50px rgba(0, 0, 0, 0.1);
-    padding-top: 190px;
+    padding-top: 175px;
 }
 
 .process-hero-section-text {
-    margin-top: 50px;
+    margin-top: 40px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -82,9 +82,13 @@ export default {
     }
 }
 @media screen and (max-width:960px) {
+    .process-hero-section {
+    min-height: 350px;
+}
     .process-hero-section-title {
-        font-size: 123px;
+        font-size: 110px;
         line-height: 130px;
+        padding-top: 130px;
     }
 }
 @media screen and (max-width:600px) {

@@ -46,7 +46,7 @@ export default {
     font-weight: 300;
     font-size: 17px;
     line-height: 25px;
-    justify-content: center;
+    text-align: center;
     color: #111827;
     margin-top: 13px !important;
 }
@@ -68,5 +68,10 @@ export default {
     text-transform: capitalize;
     margin-top: 40px;
 }
-
+@media screen and (min-width:1900px) {
+    .family-frame{
+        margin-left: 165px;
+        margin-right: 145px;
+    }
+}
 </style>

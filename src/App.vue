@@ -3,7 +3,7 @@
     <v-app-bar app flat class="app-bar-style" height="90">
       <!-- app bar logo is here -->
       <div>
-        <img alt="Vuetify Logo" src="logo_ambar (1).svg" width="145" />
+        <img alt="Vuetify Logo" src="logo_ambar (1).svg" width="165" />
       </div>
 
       <v-spacer></v-spacer>
@@ -105,6 +105,8 @@ export default {
 .router-link-exact-active .router-style {
   background-color: rgba(4, 30, 66, 0.1);
   border-bottom: 2px solid #041E42 !important;
+  font-weight: 800;
+  color: #041E42 !important;
 }
 /* media queries is here */
 

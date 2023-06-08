@@ -10,7 +10,7 @@
                     </p>
                 </v-col>
                 <v-col cols="12" sm="3">
-                    <span class="images-navigater-link">See More Articles</span>
+                    <span class="images-navigater-link d-none d-sm-flex">See More Articles</span>
                 </v-col>
             </v-row>
             <v-row class="images-navigater-inner">
@@ -27,7 +27,7 @@
                             </v-avatar>
                             <p class="ml-4 Image-title">Angus Smith</p>
                         </v-card-title>
-                        <v-card-subtitle class="Image-subtitle mt-n10">May 19, 2023</v-card-subtitle>
+                        <v-card-subtitle class="Image-subtitle mt-n10 ">May 19, 2023</v-card-subtitle>
                     </v-card>
                 </v-col>
                 <!-- Images Navigater second colum is here -->
@@ -48,6 +48,7 @@
                     </v-row>
                 </v-col>
             </v-row>
+            <span class="images-navigater-link d-flex d-sm-none mt-5 ml-4">See More Articles</span>
         </v-container>
     </div>
 </template>
@@ -199,7 +200,8 @@ export default {
 
 @media screen and (max-width:965px) {
     .images-navigater-inner-big {
-        margin-left: 40px;
+        margin-left: 10px;
+        padding-right: 0;
     }
 
     .images-navigater-big-img {
@@ -208,10 +210,6 @@ export default {
 }
 
 @media screen and (max-width:800px) {
-    .images-navigater-inner-big {
-        margin-left: 10px;
-    }
-
     .images-navigater-small-images {
         margin-left: -15px;
     }
@@ -224,7 +222,11 @@ export default {
 }
 
 @media screen and (max-width:600px) {
+    .images-navigater-inner-big{
+        margin-top: -35;
+    }
     .images-navigater-big-img {
+        width: 100%;
         height: 250px;
     }
 

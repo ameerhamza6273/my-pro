@@ -167,12 +167,14 @@ export default {
     position: absolute;
     left: -505px;
     top: 290px;
+    background-color: transparent;
 }
 
 .testimonial .owl-theme .owl-nav [class*='owl-prev'] {
     position: absolute;
-    left: -490px;
+    left: -505px;
     top: 229px;
+    background-color: transparent;
 }
 
 .testimonial .owl-theme .owl-nav [class*='owl-prev'] img {
@@ -201,7 +203,7 @@ export default {
     }
 
     .testimonial .owl-theme .owl-nav [class*='owl-prev'] {
-        left: -601px;
+        left: -615px;
         top: 240px;
     }
 }
@@ -230,7 +232,7 @@ export default {
 
     .testimonial .owl-theme .owl-nav [class*='owl-prev'] {
         position: absolute;
-        left: -215px;
+        left: -230px;
         top: 240px;
     }
 }
@@ -256,12 +258,10 @@ export default {
     .testimonial .owl-theme .owl-nav [class*='owl-next'] {
     position: inherit;
     transform: rotate(-90deg);
-   
 }
 
 .testimonial .owl-theme .owl-nav [class*='owl-prev'] {
     position: inherit;
     transform: rotate(-90deg);
-    
 }
 }</style>

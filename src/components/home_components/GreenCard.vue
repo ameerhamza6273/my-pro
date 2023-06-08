@@ -191,6 +191,11 @@ export default {
         float: right;
     }
 }
+@media screen and (max-width:600px) {
+    .green-card {
+    margin-top: 0px;
+}
+}
 @media screen and (max-width:440px) {
     .green-card-img {
         max-width: 300px !important;

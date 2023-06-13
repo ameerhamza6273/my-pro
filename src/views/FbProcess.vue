@@ -23,9 +23,12 @@ export default{
 },
     data(){
         return{
-            // 
+            pageTitle:'FB- Process', 
         }
-    }
+    },
+    mounted() {
+        document.title = this.pageTitle;
+    },
 }
 
 </script>

@@ -52,6 +52,14 @@ export default {
     AskedQuestion,
     ImagesNavigater,
   },
+  data(){
+    return{
+      pageTitle:"Home",
+    }
+  },
+  mounted() {
+        document.title = this.pageTitle;
+    },
 
 };
 </script>

@@ -6,22 +6,67 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/ambar",
+    name: "ambar",
+    component: () =>
+      import("../views/AmbarImmigration.vue"),
+  },
+  {
     path: "/",
-    name: "home",
-    component: HeroView,
+    name: "signUp",
+    component: () =>
+      import("../views/SignUp.vue"),
   },
   {
-    path: "/process",
-    name: "process",
+    path: "/login",
+    name: "login",
     component: () =>
-      import("../views/FbProcess.vue"),
+      import("../views/Login.vue"),
   },
   {
-    path: "/jobs",
-    name: "jobs",
+    path: "/dashboard",
+    name: "dashboard",
     component: () =>
-      import("../views/JobSection.vue"),
+      import("../views/Dashboard.vue"),
+      children:[
+        {
+          path: "/home",
+          name: "home",
+          component: HeroView,
+        },
+        {
+          path: "/process",
+          name: "process",
+          component: () =>
+            import("../views/FbProcess.vue"),
+        },
+        {
+          path: "/jobs",
+          name: "jobs",
+          component: () =>
+            import("../views/JobSection.vue"),
+        },
+        {
+          path: "/employerServices",
+          name: "employerServices",
+          component: () =>
+            import("../views/EmployeService.vue"),
+        },
+        {
+          path: "/checkEligibility",
+          name: "checkEligibility",
+          component: () =>
+            import("../views/CheckEligibility.vue"),
+        },
+        {
+          path: "/contactUs",
+          name: "contactUs",
+          component: () =>
+            import("../views/ContactUs.vue"),
+        },
+      ]
   },
+  
 ];
 
 const router = new VueRouter({

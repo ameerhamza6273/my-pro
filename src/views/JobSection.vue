@@ -28,9 +28,12 @@ export default{
 },
     data(){
         return{
-            // 
+            pageTitle:'Jobs', 
         }
-    }
+    },
+    mounted() {
+        document.title = this.pageTitle;
+    },
 }
 
 </script>

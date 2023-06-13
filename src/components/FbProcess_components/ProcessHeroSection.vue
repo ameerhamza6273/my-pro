@@ -57,12 +57,12 @@ export default {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 22px;
     color: #222222;
 
 }
-.text-link{
+.process-hero-section-text .text-link{
     color: #4172A0 !important;
     text-decoration: underline;
 }

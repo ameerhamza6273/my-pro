@@ -4,20 +4,20 @@
             <carousel :autoplay="false" :loop="true" :dots="false" :center="true" :slideBy=1 :navText="navText"
                 :navClass="navClass" :responsive="responsive">
                 <v-row class="jombo-box">
-                    <v-col cols="12" sm="1" class="pr-0">
+                    <v-col cols="12" sm="1" class="jombo-box-img">
                         <img src="Commas.png" alt="" style="width: 40px">
                     </v-col>
-                    <v-col cols="12" sm="11" class="pt-0 pl-0">
+                    <v-col cols="12" sm="11" class="pt-0 pr-0">
                         <h6 class="jombo-box-content">Design comps, layouts, wireframes—will your clients accept that you go
                             about things the facile way? Authorities in our business will tell in no uncertain
                             terms that Lorem Ipsum is that huge, huge no no to forswear forever. </h6>
                     </v-col>
                 </v-row>
                 <v-row class="jombo-box">
-                    <v-col cols="12" sm="1" class="pr-0">
-                        <img src="Commas.png" alt="" width="40px" style="width: 40px">
+                    <v-col cols="12" sm="1" class="jombo-box-img" >
+                        <img src="Commas.png" alt="" width="40px"  style="width: 40px">
                     </v-col>
-                    <v-col cols="12" sm="11" class="pt-0 pl-0">
+                    <v-col cols="12" sm="11" class="pt-0 pr-0">
                         <h6 class="jombo-box-content">Design comps, layouts, wireframes—will your clients accept that you go
                             about things the facile way? Authorities in our business will tell in no uncertain
                             terms that Lorem Ipsum is that huge, huge no no to forswear forever. </h6>
@@ -63,8 +63,8 @@ export default {
     border-radius: 25px;
     max-width: 980px;
     margin: 0 auto;
-    /* display: block; */
-    padding: 50px 45px 40px 45px;
+    width: 80%;
+    padding: 45px 45px 35px 45px;
     margin-top: 0px;
 }
 
@@ -72,8 +72,8 @@ export default {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
-    font-size: 34px;
-    line-height: 45px;
+    font-size: 32px;
+    line-height: 40px;
     color: #222222;
 }
 
@@ -82,7 +82,6 @@ export default {
     background-color: transparent;
     position: absolute;
     right: 0;
-    top: 320px;
 }
 
 #jombo-box .owl-theme .owl-nav [class*='owl-next']:hover {
@@ -108,7 +107,6 @@ export default {
     background-color: transparent !important;
     position: absolute;
     left: 0px;
-    top: 320px;
 }
 
 #jombo-box .owl-theme .owl-nav [class*='owl-prev'] img {
@@ -145,11 +143,22 @@ export default {
         left: 125px;
     } 
 }
-
+@media screen and (max-width:1260px) {
+    .jombo-box {
+    width: 90%;
+}
+}
 @media screen and (max-width:800px) {
     .jombo-box-content {
         padding-left: 10px;
     }
+    .jombo-box {
+    width: 90%;
+    padding: 30px 35px 30px 35px;
+}
+.jombo-box-img{
+    padding-left: 0;
+}
 }
 
 @media screen and (max-width:450px) {

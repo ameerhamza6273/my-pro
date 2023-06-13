@@ -24,6 +24,7 @@ export default {
     min-height: 430px;
     background-position: cover;
     background-size: cover;
+    
 }
 
 /* media queries is here */

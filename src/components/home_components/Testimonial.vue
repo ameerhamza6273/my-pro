@@ -167,14 +167,14 @@ export default {
     position: absolute;
     left: -505px;
     top: 290px;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .testimonial .owl-theme .owl-nav [class*='owl-prev'] {
     position: absolute;
     left: -505px;
     top: 229px;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .testimonial .owl-theme .owl-nav [class*='owl-prev'] img {

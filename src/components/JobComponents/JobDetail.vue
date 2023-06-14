@@ -1,6 +1,7 @@
 <template>
     <div id="job-detail">
         <v-container>
+            <!-- job title and text without images -->
             <div class="job-detail">
                 <h1 class="job-detail-title">Empowering Foreign Workers for a New Beginning</h1>
                 <p class="job-detail-text">Design comps, layouts, wireframes—will your clients accept that you go about
@@ -14,6 +15,7 @@
                     favor of greeking text, as its use is merely the symptom of a worse problem to take into consideration.
                 </p>
             </div>
+            <!-- job text and images -->
             <div class="job-terms">
                 <h3 class="job-terms-title">uncertain terms that Lorem Ipsum is that hu</h3>
                 <img class="job-terms-image" src="Job Detail (1).png" alt="user">

@@ -2,6 +2,7 @@
     <div id="job-card">
         <v-container>
             <div>
+                <!-- job titles is here -->
                 <p class="job-card-text">P O P U L A R T O P I C S</p>
                 <v-row>
                     <v-col cols="12" sm="9" class="pl-0 pt-0">
@@ -12,6 +13,7 @@
                     </v-col>
                 </v-row>
             </div>
+            <!-- cards is here -->
             <v-row class="job-all-cards">
                 <v-col cols="12" md="6" sm="12">
                     <v-card flat class="job-card">
@@ -62,6 +64,7 @@ export default {
 </script>
 
 <style>
+/* style is here */
 #job-card {
     margin-top: 90px;
 }
@@ -98,11 +101,11 @@ export default {
     cursor: pointer;
 }
 
+/*  card style is here */
 .job-all-cards {
     margin-top: 25px;
 }
 
-/*  card style is here */
 .job-card {
     height: 100%;
 }

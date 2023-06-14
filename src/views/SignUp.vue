@@ -1,7 +1,9 @@
 <template>
     <div>
+        <v-responsive>
         <v-row class="signup">
-            <v-col cols="12" sm="4" class="signup-frame1">
+            <!-- image column is here -->
+            <v-col cols="12" md="4" sm="12" class="signup-frame1">
                 <div class="signup-content">
                     <img src="logo_footer.png" alt="user" class="signup-img">
                     <h1 class="signup-heading">Access Your Green Card Journey</h1>
@@ -12,18 +14,23 @@
                         your green card and realizing your American Dream.</p>
                 </div>
             </v-col>
-            <v-col cols="12" sm="8">
+            <!-- form column is here -->
+            <v-col cols="12" md="8" sm="12">
                 <div class="signup-inner">
+                    <!-- form title is here -->
                     <h1 class="signup-inner-title">Create an Account</h1>
                     <p class="signup-inner-text">Don’t have an account? <span class="signup-inner-bluetext">Log in
                             here</span></p>
+                    <!-- google & facebook buttons is here -->
                     <div class="signup-inner-btns">
                         <v-btn class="signup-inner-btn" outlined><img src="Logo (1).png" alt="user" width="17px"
                                 class="mr-2"> Log in with Google</v-btn>
-                        <v-btn class="signup-inner-btn" outlined><img src="Logo (2).png" alt="user" width="17px"
+                        <v-btn class="signup-inner-btn" outlined id="btn2"><img src="Logo (2).png" alt="user" width="17px"
                                 class="mr-2">Log in with Facebook</v-btn>
                     </div>
+                    <v-divider class="mt-5 mb-3"></v-divider>
                     <p class="line">OR</p>
+                    <!-- form is here -->
                     <v-form class="signup-form">
                         <v-row>
                             <v-col cols="12" sm="6" class="pb-0">
@@ -47,11 +54,11 @@
                             </v-col>
                         </v-row>
                         <label class="label-style">Password</label>
-                        <v-text-field class="input-style" id="input2" placeholder="***********" outlined
+                        <v-text-field class="input-style" placeholder="***********" outlined
                             hint="Use 8 or more characters with a mix of letters, numbers & symbols." persistent-hint
                             append-icon="mdi-eye-off"></v-text-field>
                         <v-row>   
-                        <v-checkbox color="indigo" hide-details size="4"></v-checkbox>
+                        <v-checkbox color="indigo" hide-details size="4" class="ml-3"></v-checkbox>
                         <p class="label-style mt-5" style="font-size: 14px; line-height: 24px;">I agree to the <span style="text-decoration: underline;color: #4172A0;">Terms & Conditions</span></p>
                         </v-row> 
                         <v-btn class="signup-btn" @click="signUp">Sign up</v-btn>
@@ -59,6 +66,7 @@
                 </div>
             </v-col>
         </v-row>
+    </v-responsive>
     </div>
 </template>
 
@@ -81,6 +89,8 @@ export default {
 </script>
 
 <style>
+/* style is here */
+
 .signup-frame1 {
     background-image: url("@/assets/Rectangle\ 465.png") !important;
     min-height: 102vh;
@@ -146,7 +156,7 @@ export default {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 30px;
     text-align: center;
     color: #9CA3AF;
@@ -158,7 +168,7 @@ export default {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 30px;
     text-align: center;
     color: #4172A0;
@@ -180,6 +190,10 @@ export default {
 .signup-inner-btns {
     text-align: center;
 }
+
+.signup-inner .v-divider{
+        display: none ;
+    }
 
 .signup-inner .line {
     font-family: 'Poppins';
@@ -203,7 +217,7 @@ export default {
     transform: translateY(-1rem);
     top: 20px;
 }
-
+/* form style is here */
 .signup-inner .label-style {
     font-family: 'Poppins';
     font-style: normal;
@@ -220,7 +234,10 @@ export default {
 }
 
 .signup-inner .signup-form {
-    padding: 0 188px 0 194px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 510px !important;
 }
 
 .signup-inner .input-style .v-input__control .v-input__slot {
@@ -254,10 +271,6 @@ export default {
     opacity: 0.75;
 }
 
-.signup-inner #input2::placeholder {
-    margin-top: 5px !important;
-}
-
 .signup-inner .input-style .v-messages__message {
     margin-top: 5px !important;
     margin-left: -10px !important;
@@ -266,7 +279,6 @@ export default {
 .signup-inner .input-style .mdi-eye-off::before {
     margin-right: 25px !important;
     font-size: 0.8em;
-    margin-top: 5px !important;
 }
 
 .signup-inner .signup-btn {
@@ -284,5 +296,39 @@ export default {
     color: #FFFFFF !important;
     text-transform: inherit;
     margin-top: 15px;
+}
+/* media quires is here */
+@media screen and (max-width:960px) {
+    .signup-frame1{
+        display: none;
+    }
+    .signup{
+    padding: 10px ;
+}
+}
+@media screen and (max-width:560px) {
+    .signup-inner .signup-form {
+        min-width: 210px !important;
+        max-width: 450px;
+    }
+    .signup-inner .line {
+      display: none;
+    }
+    .signup-inner .v-divider{
+        display: block;
+        margin: 0 7%;
+    }
+    #btn2{
+        margin-top: 15px;
+    }
+    .signup-inner-btns{
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width:500px) {
+    .signup-inner .v-divider{
+        display: block;
+        margin: 0 0%;
+    }
 }
 </style>

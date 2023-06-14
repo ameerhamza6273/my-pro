@@ -1,6 +1,7 @@
 <template>
     <div id="jombo-box">
         <v-container>
+            <!-- job slider is here -->
             <carousel :autoplay="false" :loop="true" :dots="false" :center="true" :slideBy=1 :navText="navText"
                 :navClass="navClass" :responsive="responsive">
                 <v-row class="jombo-box">
@@ -58,6 +59,9 @@ export default {
 </script>
 
 <style>
+
+/* style is here */
+
 .jombo-box {
     background: #F7F7F7;
     border-radius: 25px;

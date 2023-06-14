@@ -1,0 +1,12 @@
+ <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+                              <defs>
+                                <clipPath id="clip-path">
+                                  <rect id="Rectangle_652" data-name="Rectangle 652" width="72" height="72" transform="translate(-1666 -159)" fill="#fff" stroke="#707070" stroke-width="1"></rect>
+                                </clipPath>
+                              </defs>
+                              <g id="create_account" data-name="create account" transform="translate(1666 159)">
+                                <g id="Group_819" data-name="Group 819" transform="translate(-1686.5 -153)">
+                                  <path id="Path_1082" data-name="Path 1082" d="M31.844,60A2.344,2.344,0,0,1,29.5,57.656,21.352,21.352,0,0,1,50.828,36.328h3.516a21.285,21.285,0,0,1,7.024,1.184,2.344,2.344,0,1,1-1.543,4.426,16.611,16.611,0,0,0-5.481-.923H50.828A16.659,16.659,0,0,0,34.188,57.656,2.344,2.344,0,0,1,31.844,60ZM68.172,15.82a15.82,15.82,0,1,0-15.82,15.82A15.838,15.838,0,0,0,68.172,15.82Zm-4.687,0A11.133,11.133,0,1,1,52.352,4.688,11.145,11.145,0,0,1,63.484,15.82ZM80.242,45.938H73.211V38.906a2.344,2.344,0,0,0-4.687,0v7.031H61.492a2.344,2.344,0,0,0,0,4.688h7.031v7.031a2.344,2.344,0,0,0,4.688,0V50.625h7.031a2.344,2.344,0,0,0,0-4.687Z" fill="#041e42"></path>
+                                </g>
+                              </g>
+                            </svg>

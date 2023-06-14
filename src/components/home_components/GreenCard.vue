@@ -151,7 +151,6 @@ export default {
     font-size: 13px;
     line-height: 25px;
     color: #1F2937;
-    /* margin-top: -13px; */
     padding: 0 50px 0px 35px;
     border-radius: 5px 5px 5px 5px;
 }

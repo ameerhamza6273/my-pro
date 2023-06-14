@@ -54,13 +54,13 @@ export default {
                 }
             },
             cardsArray: [
-                { img: "Clip path group.png", title: "Pay the Fee", text: `We lead the market when it comes to EB-3 Unskilled application processing charges. Our pricing
+                { img: "pay2.svg", title: "Pay the Fee", text: `We lead the market when it comes to EB-3 Unskilled application processing charges. Our pricing
                 model gives our clients the opportunity to apply for the program without being a burden to their finances. An
                 amazing instalment plan is also available to cater to the needs of EB-3 Unskilled aspirants.` },
-                { img: "Medal Icon.png", title: "Your Journey Starts", text: `Now that you have selected a job and have paid the fees, your US green card journey has begun.
+                { img: "rocket.svg", title: "Your Journey Starts", text: `Now that you have selected a job and have paid the fees, your US green card journey has begun.
                 Our administrative staff and team of attorneys will take care of you from now until you get your
                 green card.` },
-                { img: "Clip path group.png", title: " Create Account", text: `We work with reputable employers and find them the right candidates to fill in their positions.
+                { img: "account.svg", title: " Create Account", text: `We work with reputable employers and find them the right candidates to fill in their positions.
                 We have several sponsors available and you may visit the client portal to choose a job and location that best fits your needs.` },
             ]
 
@@ -97,14 +97,14 @@ export default {
 
 .apply-frame-inner {
     margin-top: 70px;
-    min-height: 500px;
+    min-height: 460px;
 }
 
 /* apply frame card style is here */
 
 .apply-frame-inner-cards {
     border-radius: 24px !important;
-    margin-top: 54px;
+    margin-top: 45px;
     padding: 60px 5px 1px 5px;
     max-width: 360px;
     min-height: 425px;
@@ -113,7 +113,8 @@ export default {
 .apply-frame-inner-cards-img {
     margin: 0 auto;
     display: block;
-    width: 60px !important;
+    width: 25% !important;
+    height: 60px;
 }
 
 
@@ -149,11 +150,12 @@ export default {
 }
 
 .apply-frame-inner .owl-item.active.center>div .apply-frame-inner-cards-img {
-    filter: brightness(7.25)
+    filter:brightness(78.25);
 }
 
 .apply-frame-inner .owl-item.active.center>div {
     background-color: #4172A0;
+    margin-top: 0px !important;
 }
 
 .apply-frame-inner .owl-theme .owl-nav [class*='owl-next'] {

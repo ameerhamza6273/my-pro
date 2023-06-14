@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- hero section image is here -->
         <div class="check-eligibil">
             <h1 class="check-eligibil-title">Ambar Blogs</h1>
         </div>

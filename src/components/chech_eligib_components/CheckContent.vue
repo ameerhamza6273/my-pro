@@ -2,8 +2,10 @@
     <div id="check-content">
         <v-container>
             <v-row class="check-content">
+                <!-- small column is here -->
                 <v-col cols="12" lg="4" md="4" sm="6">
                     <v-text-field label="Search" color="blach" append-icon="mdi-magnify"></v-text-field>
+                    <!-- all buttens is here -->
                     <h4 class="check-content-title mt-10">CATEGORIES</h4>
                     <v-row class="mt-5 pl-2 check-content-all-battuns" >
                         <v-btn class="check-content-btn" depressed color="primary">All</v-btn>
@@ -11,6 +13,7 @@
                         :key="index">{{ item.text }}</v-btn>
                     </v-row>
                     <v-divider class="mt-10" max-width="300px"></v-divider>
+                    <!-- papular cards is here -->
                     <h4 class="check-content-title mt-8">POPULAR</h4>
                     <div class="mt-4">
                         <v-card v-for="(item, index) in papularCardArray" :key="index" class="papular-card" flat>
@@ -40,6 +43,7 @@
                         </v-card-title>
                         <v-card-subtitle class="recent-awatar-subtitle mt-n10">August 15, 2023</v-card-subtitle>
                     </v-card>
+                    <!-- big side column small cards is here -->
                     <v-row class="mt-5">
                         <v-col cols="12" lg="6" md="6" sm="12">
                             <img src="Image Placeholder Recent (2).png" alt="user" width="100%">

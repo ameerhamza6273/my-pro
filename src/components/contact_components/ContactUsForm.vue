@@ -3,6 +3,7 @@
         <v-container>
             <div class="contact-form">
                 <div>
+                    <!-- contact information is here -->
                     <h1 class="contact-form-title">CONTACT INFORMATION</h1>
                     <v-row class="mt-13">
                         <v-col cols="12" sm="6">
@@ -12,7 +13,7 @@
                         <v-col cols="12" sm="6">
                             <p class="contact-form-blue-text">EMAIL</p>
                             <p class="contact-form-text d-none d-md-flex" >info@ambarimmigration.com</p>
-                            <p class="contact-form-text d-flex d-md-none">info @ambarimmigration .com</p>
+                            <p class="contact-form-text d-flex d-md-none" id="email-text">info @ambarimmigration .com</p>
                         </v-col>
                     </v-row>
                     <v-row>
@@ -26,14 +27,15 @@
                         </v-col>
                     </v-row>
                 </div>
+                <!-- contact form is here -->
                 <h1 class="contact-form-title mt-10">CONTACT US</h1>
-                <v-form class="mt-6">
+                <v-form class="mt-14">
                     <v-row>
-                        <v-col cols="12" sm="6">
+                        <v-col cols="12" sm="6" class="pb-0">
                             <label class="label-style">FIRST NAME</label>
                             <v-text-field class="input-style" placeholder="Amelia" outlined></v-text-field>
                         </v-col>
-                        <v-col cols="12" sm="6">
+                        <v-col cols="12" sm="6" class="pb-0">
                             <label class="label-style">LAST NAME</label>
                             <v-text-field class="input-style" placeholder="Watson" outlined></v-text-field>
                         </v-col>
@@ -169,6 +171,22 @@ export default {
     .contact-form {
         margin-left: 190px;
         margin-right: 175px;
+    }
+}
+@media screen and (max-width:600px) {
+
+    .contact-form-title {
+       text-align: center;
+    }
+    .contact-form-blue-text{
+        text-align: center;
+    }
+    #email-text{
+        justify-content: center;
+    }
+    .contact-form-text{
+        text-align: center;
+        max-width: 100%;
     }
 }
 </style>

@@ -75,6 +75,7 @@ export default {
 </script>
 
 <style>
+/* style is here */
 .ambar-cards {
     padding: 10px;
 }

@@ -1,9 +1,11 @@
 <template>
     <div>
+        <!-- hero section of image is here -->
         <div class="employe-service">
             <h1 class="employe-service-title">Employer Services</h1>
         </div>
         <v-container>
+            <!-- employe text is tere -->
             <div class="employe-service-text">
                 <p>The United States has always had labor shortages, but that has become more severe in recent years.
                     Businesses and industries of all sizes are facing unprecedented

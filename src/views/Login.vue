@@ -1,7 +1,9 @@
 <template>
     <div>
+        <v-responsive>
         <v-row class="login">
-            <v-col cols="12" sm="4" class="login-frame1">
+            <!-- image column is here -->
+            <v-col cols="12" md="4" sm="12" class="login-frame1">
                 <div class="login-content">
                     <img src="logo_footer.png" alt="user" class="login-img">
                     <h1 class="login-heading">Access Your Green Card Journey</h1>
@@ -12,29 +14,35 @@
                         your green card and realizing your American Dream.</p>
                 </div>
             </v-col>
-            <v-col cols="12" sm="8">
+            <!-- form column is here -->
+            <v-col cols="12" md="8" sm="12">
                 <div class="login-inner">
+                    <!-- form title is here -->
                     <h1 class="login-inner-title">Log in to Ambar</h1>
                     <p class="login-inner-text">Don’t have an account? <span class="login-inner-bluetext">Sign in
                             here</span></p>
+                    <!-- google $ facebook buttons -->
                     <div class="login-inner-btns">
                         <v-btn class="login-inner-btn" outlined><img src="Logo (1).png" alt="user" width="17px"
                                 class="mr-2"> Log in with Google</v-btn>
-                        <v-btn class="login-inner-btn" outlined><img src="Logo (2).png" alt="user" width="17px"
+                        <v-btn class="login-inner-btn" outlined id="btn2"><img src="Logo (2).png" alt="user" width="17px"
                                 class="mr-2">Log in with Facebook</v-btn>
                     </div>
+                    <v-divider class="mt-5 mb-3"></v-divider>
                     <p class="line">OR</p>
+                    <!-- form is here -->
                     <v-form class="login-form">
                         <label class="label-style">Email</label>
                         <v-text-field class="input-style" placeholder="someone@ambar.com" outlined></v-text-field>
                         <label class="label-style">Password</label>
                         <v-text-field class="input-style" placeholder="***********" outlined hint="Forgot Password?"
-                            persistent-hint></v-text-field>
+                         append-icon="mdi-eye-off" persistent-hint></v-text-field>
                         <v-btn class="login-btn" @click="login">Log in</v-btn>
                     </v-form>
                 </div>
             </v-col>
         </v-row>
+    </v-responsive>
     </div>
 </template>
 
@@ -57,9 +65,10 @@ export default {
 </script>
 
 <style>
+/* style is here */
 .login-frame1 {
     background-image: url("@/assets/Rectangle\ 465.png") !important;
-    min-height: 102vh;
+    min-height: 104vh;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -121,7 +130,7 @@ export default {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 30px;
     text-align: center;
     color: #9CA3AF;
@@ -133,7 +142,7 @@ export default {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 30px;
     text-align: center;
     color: #4172A0;
@@ -155,6 +164,10 @@ export default {
 .login-inner-btns {
     text-align: center;
 }
+
+.login-inner .v-divider{
+        display: none ;
+    }
 
 .login-inner .line {
     font-family: 'Poppins';
@@ -178,7 +191,7 @@ export default {
     transform: translateY(-1rem);
     top: 20px;
 }
-
+/* form style is here */
 .login-inner .label-style {
     font-family: 'Poppins';
     font-style: normal;
@@ -195,7 +208,10 @@ export default {
 }
 
 .login-inner .login-form {
-    padding: 0 188px 0 194px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 510px !important;
 }
 
 .login-inner .input-style .v-input__control .v-input__slot {
@@ -239,7 +255,10 @@ export default {
     margin-top: 8px !important;
     margin-left: -10px !important;
 }
-
+.login-inner .input-style .mdi-eye-off::before {
+    margin-right: 25px !important;
+    font-size: 0.8em;
+}
 .login-inner .login-btn {
     margin: 0 auto;
     display: block;
@@ -255,4 +274,41 @@ export default {
     color: #FFFFFF !important;
     text-transform: inherit;
     margin-top: 15px;
-}</style>
+}
+/* media quries is here */
+@media screen and (max-width:960px) {
+    .login-frame1{
+        display: none;
+    }
+    .login{
+        padding: 15px;
+    }
+}
+@media screen and (max-width:570px) {
+    .login-inner .login-form {
+        display: block;
+        min-width: 210px !important;
+        max-width: 450px;
+    }
+    .login-inner .line {
+      display: none;
+    }
+    .login-inner .v-divider{
+        display: block;
+        margin: 0 7%;
+    }
+    #btn2{
+        margin-top: 15px;
+    }
+    .login-inner-btns{
+        margin-top: 25px;
+    }
+  
+}
+@media screen and (max-width:500px) {
+    .login-inner .v-divider{
+        display: block;
+        margin: 0 0%;
+    }
+}
+</style>

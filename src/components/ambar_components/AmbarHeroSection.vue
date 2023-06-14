@@ -1,10 +1,12 @@
 <template>
     <div>
+        <!-- ambar hero image is here -->
         <div class="ambar">
             <p class="ambar-small-title">Your Path to a New Life</p>
             <h1 class="ambar-title">Ambar Immigration</h1>
         </div>
         <v-container>
+            <!-- ambar content text is here -->
             <div class="ambar-inner">
                 <p class="ambar-text">
                     The United States has always had labor shortages, which have become more severe in recent years.
@@ -81,7 +83,6 @@ export default {
 
 .ambar-inner {
     padding: 10px;
-
 }
 
 .ambar-text {

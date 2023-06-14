@@ -3,12 +3,12 @@
       <v-app-bar app flat class="app-bar-style" height="90">
         <!-- app bar logo is here -->
         <div>
-          <img alt="Vuetify Logo" src="logo_ambar (1).svg" width="165" />
+          <img alt="Vuetify Logo" src="logo_ambar (1).svg" width="165" @click="Ammbar" style="cursor: pointer;"/>
         </div>
   
         <v-spacer></v-spacer>
         <!-- app bar links is here -->
-        <router-link v-for="item in menubarTitle" :key="item.title" :to="item.path" class="d-none d-md-block" style="text-decoration: none !important;">
+        <router-link v-for="item in menubarTitle" :key="item.title" :to="item.path" class="d-none d-md-block router-link-style">
           <v-btn text color="#EBF7FB" class="router-style">
             <span class="links-style">{{ item.title }}</span>
           </v-btn>
@@ -21,13 +21,13 @@
       </v-app-bar>
       <!-- navigation drawer is here-->
       <v-navigation-drawer v-model="drawer" right app temporary>
-        <v-list-item style="background-color: rgba(128, 128, 128, 0.514);">
+        <v-list-item style="background-color: #041e42e7 ;">
           <v-list-item-content>
             <v-list-item-title >
-              <img src="Vector (1).png" alt="user" width="10px" class="ml-5"> 
-              <img src="Vector (2).png" alt="user" width="20px" class="ml-5"> 
-              <img src="instagram.png" alt="user" width="17px" class="ml-5"> 
-              <img src="whatsapp.png" alt="user" width="20px" class="ml-5"> 
+              <img src="Vector (1).png" alt="user" width="10px" class="ml-7"> 
+              <img src="Vector (2).png" alt="user" width="20px" class="ml-8"> 
+              <img src="instagram.png" alt="user" width="17px" class="ml-8"> 
+              <img src="whatsapp.png" alt="user" width="20px" class="ml-8"> 
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -68,6 +68,11 @@
         { title: 'Contact Us', path: "/contactUs" },
       ]
     }),
+    methods:{
+      Ammbar(){
+        this.$router.push("/ambar");
+      }
+    },
     mounted() {
         document.title = this.pageTitle;
     },
@@ -84,6 +89,11 @@
   }
   
   /* app bar links style */
+
+.router-link-style{
+  text-decoration: none !important;
+}
+
   .router-style {
     height: 90px !important;
     border-radius: 0% !important;
@@ -97,6 +107,7 @@
     line-height: 24px;
     color: #111827;
     text-transform: capitalize;
+    text-decoration: none;
   }
   
   /* app bar login btn style */

@@ -6,10 +6,10 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/ambar",
-    name: "ambar",
+    path: "/changePassword",
+    name: "changePassword",
     component: () =>
-      import("../views/AmbarImmigration.vue"),
+      import("../views/ChangePassword.vue"),
   },
   {
     path: "/",
@@ -29,6 +29,12 @@ const routes = [
     component: () =>
       import("../views/Dashboard.vue"),
       children:[
+        {
+          path: "/ambar",
+          name: "ambar",
+          component: () =>
+            import("../views/AmbarImmigration.vue"),
+        },
         {
           path: "/home",
           name: "home",

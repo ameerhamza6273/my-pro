@@ -2,8 +2,9 @@
     <div>
         <v-container>
             <div class="employe-form">
+                <!-- employe form is here -->
                 <h1 class="employe-form-title">CONTACT US</h1>
-                <v-form class="mt-6">
+                <v-form class="mt-11">
                     <v-row>
                         <v-col cols="12" sm="6">
                             <label class="label-style">FIRST NAME</label>

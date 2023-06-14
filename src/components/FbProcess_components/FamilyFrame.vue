@@ -1,6 +1,7 @@
 <template>
     <div>
         <v-container>
+            <!-- family frame title & text is here -->
             <div class="family-frame">
                 <h1 class="family-frame-heading">Family of EB-3 Visa Holders</h1>
                 <p class="family-frame-text">If your I-140 petition is approved, your spouse and unmarried children under the age of 21 may be eligible to apply for admission to the United States
@@ -25,6 +26,9 @@ export default {
 </script>
 
 <style>
+
+/* style is here */
+
 .family-frame {
     padding: 15px;
     margin-top: 40px;
@@ -68,6 +72,7 @@ export default {
     text-transform: capitalize;
     margin-top: 40px;
 }
+/* media quries is here */
 @media screen and (min-width:1900px) {
     .family-frame{
         margin-left: 165px;

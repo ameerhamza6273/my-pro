@@ -1,9 +1,11 @@
 <template>
     <div>
+        <!-- hero section is here -->
         <div class="process-hero-section">
             <h1 class="process-hero-section-title">EB-3 Process</h1>
         </div>
         <v-container>
+            <!-- fb process text is here -->
         <div class="process-hero-section-text">
             <p>The <span class="text-link">EB-3 Unskilled</span> program is part of the Immigration and Nationality Act (the Act) amended in the year 1990.
                 This program allows 10,000 people from around the world to get a green card to come, live and work in the

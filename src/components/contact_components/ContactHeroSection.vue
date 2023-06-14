@@ -1,9 +1,11 @@
 <template>
     <div>
+        <!-- hero section & image is here -->
         <div class="check-eligibil">
             <h1 class="check-eligibil-title">Contact Us</h1>
         </div>
         <v-container>
+            <!-- content is here -->
             <div class="check-eligibil-text">
                 <h1 class="check-eligibil-heading">Want assistance with your immigration?</h1>
                 <p class="check-eligibil-content">We're here to assist you! At Ambari Immigration, we have a team of

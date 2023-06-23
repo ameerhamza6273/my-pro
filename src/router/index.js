@@ -70,6 +70,12 @@ const routes = [
           component: () =>
             import("../views/ContactUs.vue"),
         },
+        // {
+        //   path: "/cityMap",
+        //   name: "cityMap",
+        //   component: () =>
+        //     import("../views/CityMap.vue"),
+        // },
       ]
   },
   
